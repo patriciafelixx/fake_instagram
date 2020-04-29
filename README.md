@@ -20,9 +20,9 @@
 - [x] Testar conexão com o banco (node testeDb.js)
 
 **C - 2º Piloto - Criação de Model Usuario:**
-- [ ] Configurar .sequelizerc ["models": path.resolve("models")]
-- [ ] Rodar o sequelize para criação/configuração de pasta de models [npx sequelize init:models]
-- [ ] Alterar a linha 8 do models/index.js para que o require carregue as configurações corretamente.
+- [x] Configurar .sequelizerc ["models": path.resolve("models")]
+- [x] Rodar o sequelize para criação/configuração de pasta de models [npx sequelize init:models]
+- [x] Alterar a linha 8 do models/index.js para que o require carregue as configurações corretamente.
 - [ ] Criar model Usuario [Usuario.js]
 - [ ] Testar se model Usuario (testes/testeModelUsuario.js)
 
