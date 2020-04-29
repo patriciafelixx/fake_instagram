@@ -30,7 +30,7 @@
 - [x] Criar o model Post
 
 **E - 4º Piloto - Criação do Model Comentario:**
-- [ ] Criar o model Comentario
+- [x] Criar o model Comentario
 - [ ] Criar um método Post.getComentarios() no model Post que retorna um array de comentarios do Post
 
 **F - 5º Piloto - Login:**
