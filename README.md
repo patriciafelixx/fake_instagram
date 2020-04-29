@@ -34,20 +34,20 @@
 - [ ] Criar um método Post.getComentarios() no model Post que retorna um array de comentarios do Post
 
 **F - 5º Piloto - Login:**
-- [ ] Instalar bcrypt
-- [ ] Instalar express-session
-- [ ] Fazer o Login:
-    - [ ] Criar rota post para '/login' que direciona para AuthController.login
-    - [ ] Criar método AuthController.login
+- [x] Instalar bcrypt
+- [x] Instalar express-session
+- [x] Fazer o Login:
+    - [x] Criar rota post para '/login' que direciona para AuthController.login
+    - [x] Criar método AuthController.login
             Caso o usuário com o email e senha digitados no form exista e tenha a senha
             correta, esse método deve criar uma session chamada usuario e armazenar
             esse usuario nesse session. Feito isso, direcionar para a rota "/home"
             Caso o usuário/senha não esteja correto, deve direcionar para "/" passando
             status de erro na url
-    - [ ] Criar um Middlerware em middlewares/VerificaUsuarioLogado.js:
+    - [x] Criar um Middlerware em middlewares/VerificaUsuarioLogado.js:
             Esse middleware verifica se o usuário está logado. Caso não esteja, direciona o
             visitante para '/'. Caso ele esteja, next()!
-    - [ ] Proteger a rota "/home" com VerificaUsuarioLogado.js
+    - [x] Proteger a rota "/home" com VerificaUsuarioLogado.js
 
 **G - 6º Piloto - Exibir feed:**
 - [ ] Alterar rota get '/home' para direcionar controller HomeController.show

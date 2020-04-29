@@ -11,11 +11,11 @@ const Post = (sequelize, DataTypes) => {
                 allowNull: false
             },
             texto: {
-                type: DataTypes.STRING,
-                allowNull: false
+                type: DataTypes.STRING(100)
             },
             img: {
-                type: DataTypes.STRING
+                type: DataTypes.STRING(100),
+                allowNull: false
             },
             usuarios_id: {
                 type: DataTypes.INTEGER,
