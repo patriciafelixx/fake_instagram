@@ -27,7 +27,7 @@
 - [x] Testar se model Usuario (testes/testeModelUsuario.js)
 
 **D - 3º Piloto - Criação do Model Post:**
-- [ ] Criar o model Post
+- [x] Criar o model Post
 
 **E - 4º Piloto - Criação do Model Comentario:**
 - [ ] Criar o model Comentario
