@@ -11,20 +11,6 @@ const AuthController = {
         res.render('auth/register');
     },
 
-    showHome: async (req,res) => {
-        let posts = await Post.findAll(
-            {
-                include: [
-                    {
-                        model: Comentario,
-                        as: 'comentarios',
-                        include: 'usuario'
-                    }, 
-                    'usuario'
-                ]
-            })
-        res.render('index', {posts});
-    },
     login: async (req, res) => {
         
         // Lendo as info do body 
@@ -42,12 +28,23 @@ const AuthController = {
         if (!bcrypt.compareSync(senha, user.senha)) {
             res.redirect('/login?error=1');
         }
-
+        
         // Setar uma session para o usuário
         req.session.usuario = user;
 
-        // Redirecionar o usuário para a rota '/home'
-        res.redirect('/home');
+        let posts = await Post.findAll(
+            {
+                include: [
+                    {
+                        model: Comentario,
+                        as: 'comentarios',
+                        include: 'usuario'
+                    }, 
+                    'usuario'
+                ]
+            })
+
+        res.render('index', { user, posts });
     }
 
 
